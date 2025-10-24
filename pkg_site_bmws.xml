@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" method="upgrade">
+	<name>PKG_SITE_BMWS</name>
+	<packagename>site_bmws</packagename>
+	<author>SEOexpert Team</author>
+	<creationDate>September 2025</creationDate>
+	<copyright>Copyright (c) 2025 SEOexpert Studio. All Rights Reserved.</copyright>
+	<license>GNU/GPL license: https://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@seoexpert.by</authorEmail>
+	<authorUrl>https://seoexpert.by/</authorUrl>
+	<version>__DEPLOY_VERSION__</version>
+	<description>PKG_SITE_BMWS_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/pkg_site_bmws.sys.ini</language>
+		<language tag="ru-RU">ru-RU/pkg_site_bmws.sys.ini</language>
+	</languages>
+	<files>
+		<folder type="plugin" group="system" id="bmws">plg_system_bmws</folder>
+		<folder type="template" client="site" id="tpl_yootheme_bmws">tpl_yootheme_bmws</folder>
+	</files>
+</extension>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_BMWS</name>
+	<author>SEOexpert Team</author>
+	<creationDate>September 2025</creationDate>
+	<copyright>Copyright (c) 2025 SEOexpert Studio. All Rights Reserved.</copyright>
+	<license>GNU/GPL license: https://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@seoexpert.by</authorEmail>
+	<authorUrl>https://seoexpert.by/</authorUrl>
+	<version>__DEPLOY_VERSION__</version>
+	<description>PLG_SYSTEM_BMWS_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\System\Bmws</namespace>
+	<scriptfile>script.php</scriptfile>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/plg_system_bmws.ini</language>
+		<language tag="en-GB">en-GB/plg_system_bmws.sys.ini</language>
+		<language tag="ru-RU">ru-RU/plg_system_bmws.ini</language>
+		<language tag="ru-RU">ru-RU/plg_system_bmws.sys.ini</language>
+	</languages>
+	<files>
+		<folder>services</folder>
+		<folder plugin="bmws">src</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			</fieldset>
+		</fields>
+	</config>
+</extension>

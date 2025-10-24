@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="template" client="site" method="upgrade">
+  <name>yootheme_bmws</name>
+  <version>4.5.26</version>
+  <creationDate>September 2025</creationDate>
+  <copyright>Copyright (c) 2025 SEOexpert Studio. All Rights Reserved.</copyright>
+  <license>GNU/GPL license: https://www.gnu.org/copyleft/gpl.html</license>
+  <author>SEOexpert Team</author>
+  <authorEmail>info@seoexpert.by</authorEmail>
+  <authorUrl>https://seoexpert.by/</authorUrl>
+  <description><![CDATA[
+            <div id="tmpl-description">
+            A powerful, flexible and elegant website builder that allows you to create complex pages within minutes and customize every aspect of the theme.</div>
+            <script src="../templates/yootheme/templateDetails.min.js" defer></script>
+        ]]></description>
+  <inheritable>0</inheritable>
+  <parent>yootheme</parent>
+  <positions>
+    <position>toolbar-left</position>
+    <position>toolbar-right</position>
+    <position>logo</position>
+    <position>navbar</position>
+    <position>header</position>
+    <position>dialog</position>
+    <position>logo-mobile</position>
+    <position>navbar-mobile</position>
+    <position>header-mobile</position>
+    <position>dialog-mobile</position>
+    <position>top</position>
+    <position>sidebar</position>
+    <position>bottom</position>
+    <position>builder-1</position>
+    <position>builder-2</position>
+    <position>builder-3</position>
+    <position>builder-4</position>
+    <position>builder-5</position>
+    <position>builder-6</position>
+  </positions>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="config" type="hidden" filter="RAW"/>
+        <field name="yootheme" type="hidden" default="true"/>
+        <field name="uikit3" type="hidden" default="true"/>
+        <field name="widgetkit" type="hidden" default="noconflict"/>
+      </fieldset>
+    </fields>
+  </config>
+  <scriptfile>script.php</scriptfile>
+  <files>
+    <filename>templateDetails.xml</filename>
+        <folder>less</folder>
+<!--    <folder>html</folder>-->
+  </files>
+  <media folder="media" destination="templates/site/yootheme_bmws">
+<!--    <folder>css</folder>-->
+<!--    <folder>js</folder>-->
+<!--    <folder>images</folder>-->
+  </media>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/tpl_yootheme_bmws.ini</language>
+    <language tag="en-GB">en-GB/tpl_yootheme_bmws.sys.ini</language>
+    <language tag="ru-RU">ru-RU/tpl_yootheme_bmws.ini</language>
+    <language tag="ru-RU">ru-RU/tpl_yootheme_bmws.sys.ini</language>
+  </languages>
+</extension>
