@@ -1,10 +1,147 @@
 /* ========================================================================
-   Theme
+                                   Шрифт
  ========================================================================== */
 
-// Variables
-// ========================================================================
+@media(max-width: 960px){
+  h3, .uk-h3{
+    font-size: 16px;
+  }
+}
+
+
+/* ========================================================================
+                                   Меню
+ ========================================================================== */
+
+// Хедер прозрачный (стиль почему-то не работает в билдере)
+.tm-header-overlay{
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+@media(max-width: 1400px){
+  .tm-header .uk-container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
 
 //
-// Page
+// Global
 //
+
+@global-background: #141414;
+
+//
+// Badge
+//
+
+@badge-background: #1C69D4;
+@badge-font-size: 12px;
+@badge-padding-horizontal: 10px;
+@badge-padding-vertical: 9px;
+@badge-size: 25px;
+
+//
+// Base
+//
+
+@base-body-background: #141414;
+@base-body-color: #FFFFFF;
+@base-body-font-family: 'Onest';
+@base-heading-font-family: inherit;
+@base-h1-color: #FFFFFF;
+@base-h1-font-size-m: 56px;
+@base-h1-font-weight: 600;
+@base-h2-color: #FFFFFF;
+@base-h2-font-size-m: 48px;
+@base-h2-line-height: 1.2;
+@base-h4-color: #FFFFFF;
+@base-h4-font-size: 24px;
+@base-h4-font-weight: 600;
+@base-h4-line-height: 1.3;
+@base-h6-color: rgba(255, 255, 255, 0.7);
+@base-h6-font-size: 18px;
+@base-h6-text-transform: none;
+
+//
+// Button
+//
+
+@button-border-radius: 16px;
+@button-border-width: 2px;
+@button-font-size: 18px;
+@button-font-weight: 600;
+@button-line-height: 48px;
+@button-text-transform: none;
+@button-default-background: #FFFFFF;
+@button-default-border: #FFFFFF;
+@button-default-color: #141414;
+@button-default-hover-background: #FFFFFF;
+@button-default-hover-border: #FFFFFF;
+@button-default-hover-color: #1C69D4;
+@button-default-active-background: #FFFFFF;
+@button-default-active-border: #FFFFFF;
+@button-default-active-color: #1C69D4;
+@button-primary-background: #1C69D4;
+@button-primary-border: #1C69D4;
+@button-primary-active-background: #195EBD;
+@button-secondary-background: transparent;
+@button-secondary-border: rgba(255, 255, 255, 0.5);
+@button-secondary-hover-background: rgba(255, 255, 255, 0.57);
+@button-secondary-hover-border: rgba(20, 20, 20, 0.79);
+@button-secondary-hover-color: rgba(20, 20, 20, 0.79);
+@button-secondary-active-border: #1C69D4;
+@button-secondary-active-color: #1C69D4;
+@button-text-color: #FFFFFF;
+@button-text-icon-mode: none;
+@button-text-mode: none;
+@button-text-hover-color: #1C69D4;
+
+//
+// Container
+//
+
+@container-max-width: 1360px;
+@container-small-max-width: 1216px;
+
+//
+// Navbar
+//
+
+@navbar-background: rgba(0, 0, 0, 0);
+@navbar-color-mode: light;
+@navbar-padding-top: 0;
+@navbar-padding-top-m: 40px;
+
+//
+// Section
+//
+
+@section-padding-vertical: 0px;
+@section-padding-vertical-m: 0px;
+@section-small-padding-vertical: 16px;
+
+//
+// Slidenav
+//
+
+@slidenav-background: #FFFFFF;
+@slidenav-border-radius: 16px;
+@slidenav-color: rgba(102, 102, 102, 0.73);
+@slidenav-margin: 20px;
+@slidenav-padding-horizontal: 14px;
+@slidenav-padding-vertical: 13px;
+@slidenav-hover-background: #1C69D4;
+@slidenav-hover-color: #FFFFFF;
+@slidenav-active-background: #1C69D4;
+@slidenav-active-color: rgb(255, 255, 255);
+
+//
+// Tile
+//
+
+@tile-padding-horizontal-m: 70px;
+@tile-padding-vertical-m: 110px;
+
