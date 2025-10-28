@@ -8,7 +8,6 @@
   }
 }
 
-
 /* ========================================================================
                                    Меню
  ========================================================================== */
@@ -18,14 +17,49 @@
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
-@media(max-width: 1400px){
-  .tm-header .uk-container {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
+.tm-header .uk-navbar{
+  border-radius: 32px;
+  background: #1E1E1E;
+  padding: 40px 80px;
 }
+
+/* Главная страница */
+body.cc-home .tm-header .uk-navbar {
+  background: transparent !important;
+}
+
+/* ========================================================================
+                                   Кнопки
+ ========================================================================== */
+
+.uk-button.uk-button-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #fff; /* базовый цвет иконки */
+}
+
+.uk-button.uk-button-text::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background-color: currentColor;
+  -webkit-mask: url("/images/icons/path.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("/images/icons/path.svg") no-repeat center;
+  mask-size: contain;
+}
+.uk-button.uk-button-text:hover {
+  color: #1C69D4; /* при наведении иконка перекрасится */
+}
+
 
 //
 // Global
@@ -50,11 +84,15 @@
 @base-body-background: #141414;
 @base-body-color: #FFFFFF;
 @base-body-font-family: 'Onest';
+@base-link-color: rgba(255, 255, 255, 0.7);
+@base-link-text-decoration: underline;
 @base-heading-font-family: inherit;
 @base-h1-color: #FFFFFF;
+@base-h1-font-size: 32px;
 @base-h1-font-size-m: 56px;
 @base-h1-font-weight: 600;
 @base-h2-color: #FFFFFF;
+@base-h2-font-size: 30px;
 @base-h2-font-size-m: 48px;
 @base-h2-line-height: 1.2;
 @base-h4-color: #FFFFFF;
@@ -72,7 +110,7 @@
 @button-border-radius: 16px;
 @button-border-width: 2px;
 @button-font-size: 18px;
-@button-font-weight: 600;
+@button-font-weight: 500;
 @button-line-height: 48px;
 @button-text-transform: none;
 @button-default-background: #FFFFFF;
@@ -100,6 +138,21 @@
 @button-text-hover-color: #1C69D4;
 
 //
+// Card
+//
+
+@card-border-radius: 32px;
+@card-primary-background: #1C69D4;
+@card-secondary-background: #1E1E1E;
+
+//
+// Close
+//
+
+@close-color: #FFFFFF;
+@close-hover-color: #FFFFFF;
+
+//
 // Container
 //
 
@@ -107,13 +160,23 @@
 @container-small-max-width: 1216px;
 
 //
+// Form
+//
+
+@form-background: #1C69D4;
+@form-color: #FFFFFF;
+@form-placeholder-color: #FFFFFF;
+
+//
 // Navbar
 //
 
-@navbar-background: rgba(0, 0, 0, 0);
-@navbar-color-mode: light;
+@navbar-background: rgba(248, 248, 248, 0);
+@navbar-color-mode: dark;
+@navbar-padding-bottom-m: 16px;
 @navbar-padding-top: 0;
-@navbar-padding-top-m: 40px;
+@navbar-padding-top-m: 16px;
+@navbar-nav-item-height: 0px;
 
 //
 // Section
@@ -139,9 +202,14 @@
 @slidenav-active-color: rgb(255, 255, 255);
 
 //
+// Text
+//
+
+@text-secondary-color: #FFFFFF;
+
+//
 // Tile
 //
 
 @tile-padding-horizontal-m: 70px;
 @tile-padding-vertical-m: 110px;
-
