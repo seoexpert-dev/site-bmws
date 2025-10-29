@@ -12,6 +12,32 @@
                                    Меню
  ========================================================================== */
 
+.uk-navbar-nav{
+  align-items: center;
+}
+
+.uk-offcanvas-close svg{
+  display: none;
+}
+.uk-offcanvas-close{
+  background-image: url("/images/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+
+.tm-header-mobile .uk-icon svg{
+  display: none;
+}
+.tm-header-mobile .uk-icon{
+  background-image: url("/images/icons/menu-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+
 // Хедер прозрачный (стиль почему-то не работает в билдере)
 .tm-header-overlay{
   position: absolute;
@@ -31,10 +57,30 @@ body.cc-home .tm-header .uk-navbar {
   background: transparent !important;
 }
 
+@media (max-width: 960px) {
+  .tm-header-overlay {
+    position: unset;
+  }
+  .tm-header-mobile .uk-navbar{
+    border-radius: 16px;
+    background: #1E1E1E;
+    padding: 12px 16px;
+    margin-top: 15px;
+  }
+  .uk-offcanvas-bar {
+    width: 100%;
+
+  }
+  .uk-nav.uk-nav-secondary{
+    font-size: 20px;
+  }
+}
+
 /* ========================================================================
                                    Кнопки
  ========================================================================== */
 
+// uk-button-text
 .uk-button.uk-button-text {
   position: relative;
   display: flex;
@@ -60,6 +106,70 @@ body.cc-home .tm-header .uk-navbar {
   color: #1C69D4; /* при наведении иконка перекрасится */
 }
 
+//uk-button-primary
+.uk-button.uk-button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uk-button.uk-button-primary::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  background: url("/images/icons/path.svg") no-repeat center;
+  background-size: contain;
+}
+
+
+/* ========================================================================
+                                   Разное
+ ========================================================================== */
+
+// Белая карточка
+.cc-white-card{
+  padding: 60px 80px;
+  border-radius: 32px;
+  background: #fff;
+  color: #141414!important;
+}
+.cc-white-card h3{
+  color: #141414!important;
+}
+@media(max-width: 960px){
+  .cc-white-card{
+    padding: 30px;
+    border-radius: 16px;
+  }
+}
+
+// Синяя карточка
+.cc-blue-card{
+  padding: 74px 80px 79px 80px;
+  border-radius: 32px;
+  background: #1C69D4;
+}
+@media(max-width: 960px){
+  .cc-blue-card{
+    padding: 30px;
+    border-radius: 16px;
+  }
+}
+
+// Темная карточка
+.cc-dark-card{
+  padding: 60px 80px;
+  border-radius: 32px;
+  background: #1E1E1E;
+}
+@media(max-width: 960px){
+  .cc-dark-card{
+    padding: 30px;
+    border-radius: 16px;
+  }
+}
 
 //
 // Global
@@ -166,6 +276,18 @@ body.cc-home .tm-header .uk-navbar {
 @form-background: #1C69D4;
 @form-color: #FFFFFF;
 @form-placeholder-color: #FFFFFF;
+@form-focus-background: #1C69D4;
+@form-focus-color: #FFFFFF;
+@form-radio-border: #FFFFFF;
+@form-radio-checked-focus-background: #1C69D4;
+@form-radio-focus-border: #FFFFFF;
+@form-radio-checked-background: #1C69D4;
+
+//
+// Nav
+//
+
+@nav-secondary-font-size: 32px;
 
 //
 // Navbar
@@ -173,10 +295,30 @@ body.cc-home .tm-header .uk-navbar {
 
 @navbar-background: rgba(248, 248, 248, 0);
 @navbar-color-mode: dark;
-@navbar-padding-bottom-m: 16px;
-@navbar-padding-top: 0;
-@navbar-padding-top-m: 16px;
+@navbar-padding-bottom: 16px;
+@navbar-padding-top: 16px;
+@navbar-nav-item-color: #FFFFFF;
+@navbar-nav-item-font-size: 16px;
 @navbar-nav-item-height: 0px;
+@navbar-nav-item-text-transform: none;
+@navbar-nav-item-hover-color: #FFFFFF;
+@navbar-nav-item-onclick-color: #FFFFFF;
+@navbar-nav-item-active-color: #FFFFFF;
+@navbar-nav-item-line-mode: true;
+@navbar-nav-item-line-hover-background: #FFFFFF;
+@navbar-nav-item-line-onclick-background: #FFFFFF;
+@navbar-nav-item-line-active-background: #FFFFFF;
+@navbar-nav-item-line-active-mode: false;
+
+//
+// Offcanvas
+//
+
+@offcanvas-bar-background: #141414;
+@offcanvas-bar-width-s: 600px;
+@offcanvas-close-padding: 15px;
+@offcanvas-close-position: 15px;
+@offcanvas-close-position-s: 28px;
 
 //
 // Section
@@ -206,6 +348,7 @@ body.cc-home .tm-header .uk-navbar {
 //
 
 @text-secondary-color: #FFFFFF;
+@text-small-font-size: 12px;
 
 //
 // Tile
